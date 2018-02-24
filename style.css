@@ -865,6 +865,17 @@ textarea {
 	font-size: 1rem;
 	line-height: 1.5;
 }
+.cursive {
+	font-family: 'Mr Dafoe';
+}
+.header-line {
+	color: #416684;
+	border-top: 2px solid #416684;
+	height: .3em;
+	width: 50px !important;
+	display: inline-block;
+	margin-right: 10px;
+}
 .site-header .custom-logo {
 	max-width: 200px;
 }
@@ -908,6 +919,16 @@ ul.list-unstyled {
 	color: inherit;
 }
 
+.btn-outline-light {
+	border-radius: 0 !important;
+}
+.btn-outline-light:visited {
+	color: inherit;
+}
+.btn-outline-light:hover {
+	color: #416684;
+}
+
 .site-header #navbarSupportedContent a.btn {
 	color: rgb(255, 255, 255) !important;
 	margin: .6em .4em;
@@ -926,3 +947,5 @@ ul.list-unstyled {
 .site-header #navbarSupportedContent .dropdown-menu .dropdown-item:hover {
 	background-color: #2089b5 !important;
 }
+/* background colours */
+.bg-blue { background: #416684; color: #ffffff; }

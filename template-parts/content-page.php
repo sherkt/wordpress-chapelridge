@@ -43,7 +43,7 @@
 						),
 						get_the_title()
 					),
-					'<span class="btn btn-primary edit-link">',
+					'<span class="btn btn-primary edit-link d-none">',
 					'</span>'
 				);
 			?>
