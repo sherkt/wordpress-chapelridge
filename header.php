@@ -43,9 +43,14 @@
 								<span class="navbar-toggler-icon"></span>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
+								<?php
+									wp_nav_menu( array(
+										'menu' => 'Header Menu',
+										'items_wrap' => '<ul id="%1$s" class="list-unstyled %2$s">%3$s</ul>',
+										'before' => '<span class="dropdown-item">',
+										'after' => '</span>',
+									) );
+								 ?>
 							</div>
 						</li>
 						<li class="nav-item"><a class="nav-link btn btn-blue">CONTACT</a></li>
