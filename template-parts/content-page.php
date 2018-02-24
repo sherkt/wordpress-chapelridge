@@ -10,8 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<header class="entry-header container">
+		<?php //the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
 	<?php chapel_ridge_post_thumbnail(); ?>
@@ -28,7 +28,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="entry-footer container">
 			<?php
 				edit_post_link(
 					sprintf(
@@ -43,7 +43,7 @@
 						),
 						get_the_title()
 					),
-					'<span class="edit-link">',
+					'<span class="btn btn-primary edit-link">',
 					'</span>'
 				);
 			?>
