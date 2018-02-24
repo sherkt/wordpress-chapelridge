@@ -889,10 +889,23 @@ ul.list-unstyled {
 	border-radius: 1.45em;
 	background-color: rgb(32, 136, 181);
 }
+.btn-blue:hover {
+	background-color: rgb(22, 97, 130);
+}
 .btn-blue-grey {
 	color: rgb(255, 255, 255);
 	border-radius: 1.45em;
 	background-color: rgb(62, 102, 132);
+}
+.btn-blue-grey:hover {
+	background-color: rgb(55, 92, 119);
+}
+
+.btn-primary a {
+	text-decoration: none !important;
+}
+.btn-primary a:visited {
+	color: inherit;
 }
 
 .site-header #navbarSupportedContent a.btn {
