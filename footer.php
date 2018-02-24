@@ -31,7 +31,7 @@
 			</div>
 		</div>
 		<div class="site-info container text-center">
-			&copy; <?php date("Y"); ?> Chapel Ridge Free Methodist Church
+			&copy; <?php echo date("Y"); ?> Chapel Ridge Free Methodist Church
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
