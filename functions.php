@@ -110,8 +110,26 @@ function chapel_ridge_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	$footer_args = array(
+		'name'          => 'Footer Sidebar 1',
+		'id'            => 'footer-sidebar-1',
+		'description'   => 'Add footer widgets here.',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title d-none">',
+		'after_title'   => '</h2>',
+	);
+	register_sidebar( $footer_args );
+	for ($i = 1; $i <= 4; $i++ ) {
+		$footer_args['name'] = "Footer Sidebar $i";
+		$footer_args['id'] = "footer-sidebar-$i";
+		register_sidebar( $footer_args );
+	}
+
 }
 add_action( 'widgets_init', 'chapel_ridge_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -155,4 +173,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
