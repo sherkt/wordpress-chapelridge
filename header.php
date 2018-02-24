@@ -31,7 +31,7 @@
 	<header id="masthead" class="site-header">
 		<div class="container">
 
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background:none !important;">
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 				<div class="mr-auto">
 					<?php the_custom_logo(); ?>
 				</div>
