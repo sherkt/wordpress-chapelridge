@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 1.0.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: chapel-ridge
@@ -850,4 +850,55 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+/*--------------------------------------------------------------
+>>>> Chapel Ridge Theme customization */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.site-header .custom-logo {
+	max-width: 200px;
+}
+.site-header {
+	background: #4e505d;
+}
+
+ul.list-unstyled {
+	margin: 0;
+}
+
+#navbarSupportedContent .dropdown-menu:after {
+	left: auto;
+	right: 13px;
+}
+#navbarSupportedContent .dropdown-menu {
+	left: auto;
+	right: 0;
+}
+.btn-blue {
+	color: rgb(255, 255, 255);
+	border-radius: 1.45em;
+	background-color: rgb(32, 136, 181);
+}
+.btn-blue-grey {
+	color: rgb(255, 255, 255);
+	border-radius: 1.45em;
+	background-color: rgb(62, 102, 132);
+}
+
+#navbarSupportedContent a.btn {
+	color: rgb(255, 255, 255) !important;
+	margin: .6em .4em;
+	padding: .9em 1em;
+	line-height: .4em;
+	font-size: .8em;
 }
