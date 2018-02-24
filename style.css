@@ -851,6 +851,8 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
 /*--------------------------------------------------------------
 >>>> Chapel Ridge Theme customization */
 body,
@@ -879,8 +881,8 @@ textarea {
 .site-header .custom-logo {
 	max-width: 200px;
 }
-.site-header {
-	background: #4e505d;
+.site-header, .site-header .bg-dark {
+	background: #4e505d !important;
 }
 
 ul.list-unstyled {
@@ -947,5 +949,12 @@ ul.list-unstyled {
 .site-header #navbarSupportedContent .dropdown-menu .dropdown-item:hover {
 	background-color: #2089b5 !important;
 }
+
+.site-header {
+	margin-bottom: 60px;
+	border-bottom: 3px solid rgba(255,255,255,0.1);
+}
+
+
 /* background colours */
 .bg-blue { background: #416684; color: #ffffff; }
