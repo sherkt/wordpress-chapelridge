@@ -866,9 +866,17 @@ textarea {
 	font-size: 1rem;
 	line-height: 1.5;
 }
+a, a:visited {
+	color: #416684;
+}
 .cursive {
 	font-family: 'Mr Dafoe';
 }
+
+ul.list-unstyled {
+	margin: 0;
+}
+
 .header-line {
 	color: #416684;
 	border-top: 2px solid #416684;
@@ -877,6 +885,7 @@ textarea {
 	display: inline-block;
 	margin-right: 10px;
 }
+
 .site-header .custom-logo {
 	max-width: 200px;
 }
@@ -884,8 +893,8 @@ textarea {
 	background: #4e505d !important;
 }
 
-ul.list-unstyled {
-	margin: 0;
+.site-header .navbar {
+    padding: .3rem 1rem;
 }
 
 .site-header #navbarSupportedContent .dropdown-menu:after {
@@ -895,6 +904,15 @@ ul.list-unstyled {
 .site-header #navbarSupportedContent .dropdown-menu {
 	left: auto;
 	right: 0;
+}
+.btn-primary {
+	color: rgb(255, 255, 255) !important;
+	border-color: rgb(32, 136, 181);
+	background-color: rgb(32, 136, 181);
+}
+.btn-primary:hover {
+	background-color: rgb(22, 97, 130);
+	border-color: rgb(22, 97, 130);
 }
 .btn-blue {
 	color: rgb(255, 255, 255);
@@ -927,7 +945,7 @@ ul.list-unstyled {
 	color: inherit;
 }
 .btn-outline-light:hover {
-	color: #416684;
+	color: #416684 !important;
 }
 
 .site-header #navbarSupportedContent a.btn {
@@ -939,7 +957,7 @@ ul.list-unstyled {
 }
 .site-header #navbarSupportedContent .dropdown-menu {
 	min-width: 300px;
-	background-color: #4e505d;
+	background-color: #525561;
 }
 .site-header #navbarSupportedContent .dropdown-menu .list-unstyled a {
 	text-decoration: none !important;
@@ -952,6 +970,7 @@ ul.list-unstyled {
 	margin-bottom: 20px;
 	border-bottom: 3px solid rgba(255,255,255,0.1);
 }
+
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -971,3 +990,18 @@ ul.list-unstyled {
 
 /* background colours */
 .bg-blue { background: #416684; color: #ffffff; }
+
+/* sliders */
+.entry-content .owl-carousel .owl-nav button.owl-prev, .entry-content .owl-carousel .owl-nav button.owl-next {
+	padding: 30px 30px !important;
+	border-radius: 50%;
+}
+.owl-stage-outer .owl-item p.h1 {
+	text-shadow: 2px 2px 12px #636363;
+    color: #ffffff;
+    font-size: 3.2rem;
+}
+
+#slider_76 .owl-item .btn {
+	border-radius: 30px;
+}
