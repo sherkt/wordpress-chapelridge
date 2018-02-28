@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" />
 	<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Poppins:400,400i,500,500i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
 
