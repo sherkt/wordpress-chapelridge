@@ -1,0 +1,14 @@
+.jumbotron, .col-12 {
+  clear:both;
+  width:100%;
+}
+.bg-blue { background: #416684; color: #ffffff; }
+.bg-grey { background: #4e505d; color: #ffffff; }
+.bg-purple-grey { background: #3f455d; color: #ffffff; }
+.btn {
+  padding: 5px;
+  border-radius: 4px;
+  border-color: rgb(32, 136, 181);
+  background-color: rgb(32, 136, 181);
+  color: #fff;
+}
