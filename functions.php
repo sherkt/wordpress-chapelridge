@@ -135,7 +135,7 @@ add_action( 'widgets_init', 'chapel_ridge_widgets_init' );
  * Enqueue scripts and styles.
  */
 function chapel_ridge_scripts() {
-	wp_enqueue_style( 'chapel-ridge-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'chapel-ridge-style', get_stylesheet_uri(), array(), '1.0.1' );
 
 	wp_enqueue_script( 'chapel-ridge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
