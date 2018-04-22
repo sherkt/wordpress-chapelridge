@@ -1,0 +1,101 @@
+/* Light Green Google Calendar Theme */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+	color:#000;
+	font-family:Poppins;
+	background:#FFF;
+}
+
+.date-nav-buttons .navbutton {
+	border:1px solid #EBEBEB;
+}
+
+.date-nav-buttons:before,
+.date-nav-buttons:after,
+#todayButton1 {
+	color:#000;
+}
+
+/* tab selector */
+.ui-rtsr-selected {
+	font-weight: normal;
+	background: #FFF;
+	color: #000;
+	border: 1px solid #000;
+}
+.t2-embed {
+	display:none;
+}
+.ui-rtsr-unselected {
+	background: #E8E8E8;
+	color: #000;
+}
+/*no top radius*/
+.ui-rtsr >:first-child {
+	display:none;
+}
+body #mvDaynamesTable {
+    font: 20px Poppins;
+}
+/*week*/
+body .tg-timedevents,
+body .wk-allday {
+	background:#FFF;
+}
+
+/*grid*/
+.mv-dayname {
+	color:#000;
+}
+.mv-event-container {
+	background:transparent;
+	top:30px;
+}
+.st-grid .st-dtitle-today,
+.st-bg-today {
+	background:#82b244;
+	border:1px transparent;
+}
+body .st-dtitle.st-dtitle {
+    text-align: left;
+    height: 1.3em;
+	font: 25px/26px Poppins;
+	color:#000;
+}
+body .st-dtitle.st-dtitle span {
+	margin-left: 6px;
+}
+body .st-dtitle-nonmonth {
+	color:#4A4A4A;
+}
+.st-dtitle.st-dtitle-today {
+	color:#000;
+}
+.month-row .rb-n {
+	border-radius:0px;
+	-webkit-border-radius:0px;
+	background:#D96363 !important;/*override inline*/
+}
+
+tr td .te {
+    color: #9fa0a3 !important;
+	transition: color .5s ease;
+}
+tr td .te:hover {
+	color: #597b32 !important;
+}
+tr td[data-sf-today="true"] .te,
+.st-dtitle.st-dtitle-today{
+	color: #FFF !important;
+}
+td.st-c {
+	vertical-align: top;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/*agenda*/
+body .agenda .scrollbox {
+	background:#FFF;
+}
