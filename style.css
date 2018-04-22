@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0.1
+Version: 1.0.0.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: chapel-ridge
@@ -877,6 +877,11 @@ ul.list-unstyled {
 	margin: 0;
 }
 
+.site-footer {
+	border-top: 2px solid #efefef;
+	padding-top: 30px;
+}
+
 .header-line {
 	color: #416684;
 	border-top: 2px solid #416684;
@@ -885,6 +890,7 @@ ul.list-unstyled {
 	display: inline-block;
 	margin-right: 10px;
 }
+.header-line>em{display:none!important;}
 
 .site-header .custom-logo {
 	max-width: 200px;
@@ -948,6 +954,10 @@ ul.list-unstyled {
 	color: #416684 !important;
 }
 
+.btn-round {
+	border-radius: 6px !important;
+}
+
 .site-header #navbarSupportedContent a.btn {
 	color: rgb(255, 255, 255) !important;
 	margin: .6em .4em;
@@ -990,6 +1000,12 @@ ul.list-unstyled {
 
 /* background colours */
 .bg-blue { background: #416684; color: #ffffff; }
+.bg-grey { background: #4e505d; color: #ffffff; }
+.bg-purple-grey { background: #3f455d; color: #ffffff; }
+
+/* font-colors */
+.text-cr-blue { color: #2088b5 !important; }
+.text-cr-blue-light { color: #289dd0 !important; }
 
 /* sliders */
 .entry-content .owl-carousel .owl-nav button.owl-prev, .entry-content .owl-carousel .owl-nav button.owl-next {
@@ -1002,6 +1018,51 @@ ul.list-unstyled {
     font-size: 3.2rem;
 }
 
+#home-info-header a, #home-info-header a:hover, #home-info-header a:active, #home-info-header a:visited {
+	color: #289dd0 !important;
+}
+
+#home-info-header a.btn {
+	color: #ffffff !important;
+	border-radius: 6px !important;
+}
+#home-info-header a.btn:hover, #home-info-header a.btn:active {
+	color: #289dd0 !important;
+}
+
 #slider_76 .owl-item .btn {
 	border-radius: 30px;
+}
+
+#church-staff img {
+	margin-right: 2.2em;
+	margin-bottom: 2.2em;
+}
+#church-staff .staff-description {
+	font-size: 1.2rem;
+}
+
+body.home .slider-wrapper {
+	margin-top: -44px;
+}
+
+body.home .owl-dots {
+	bottom: 20px !important;
+}
+body.home .owl-dots .owl-dot > span {
+	background-color: rgba(0,0,0,0.5) !important
+}
+body.home .owl-dots .owl-dot.active > span {
+	background-color: rgba(0,0,0,0.8) !important
+}
+
+body.home .owl-carousel {
+	margin-bottom: -5px !important;
+}
+
+@media only screen and (min-width: 768px) {
+	body.home .border-left {
+		border-left: 1px solid rgba(170,174,181,0.5) !important;
+		padding-left: 30px;
+	}
 }
