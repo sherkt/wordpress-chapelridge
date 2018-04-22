@@ -53,8 +53,8 @@
 								 ?>
 							</div>
 						</li>
-						<li class="nav-item"><a class="nav-link btn btn-blue">CONTACT</a></li>
-						<li class="nav-item"><a class="nav-link btn btn-blue-grey">MEMBERS</a></li>
+						<li class="nav-item"><a href="/contact" class="nav-link btn btn-blue">CONTACT</a></li>
+						<li class="nav-item"><a href="/members" class="nav-link btn btn-blue-grey">MEMBERS</a></li>
 					</ul>
 				</div>
 			</nav>
