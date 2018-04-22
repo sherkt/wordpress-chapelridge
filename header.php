@@ -24,6 +24,14 @@
 	<?php wp_head(); ?>
 </head>
 
+<?php
+if ( is_search() || is_404() || get_post_type() === 'wpfc_sermon' ) {
+	$add_container = True;
+} else {
+	$add_container = False;
+}
+?>
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'chapel-ridge' ); ?></a>
@@ -63,4 +71,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content <?php if($add_container){echo 'container' ;} ?>">
