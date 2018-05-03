@@ -38,32 +38,31 @@ if ( is_search() || is_404() || get_post_type() === 'wpfc_sermon' ) {
 
 	<header id="masthead" class="site-header">
 		<div class="container">
-
-			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-				<div class="mr-auto">
-					<?php the_custom_logo(); ?>
+			<div class="row d-none d-md-block">
+				<div class="col-12">
+						<?php the_custom_logo(); ?>
 				</div>
+			</div>
 
-				<div id="navbarSupportedContent">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="navbar-toggler-icon"></span>
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<?php
-									wp_nav_menu( array(
-										'menu' => 'Header Menu',
-										'items_wrap' => '<ul id="%1$s" class="list-unstyled %2$s">%3$s</ul>',
-										'before' => '<span class="dropdown-item">',
-										'after' => '</span>',
-									) );
-								 ?>
-							</div>
-						</li>
-						<li class="nav-item"><a href="/contact" class="nav-link btn btn-blue">CONTACT</a></li>
-						<li class="nav-item"><a href="/members" class="nav-link btn btn-blue-grey">MEMBERS</a></li>
-					</ul>
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+				<span class="text-white d-block d-md-none">
+					<?php the_custom_logo(); ?>
+				</span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div>
+						<?php
+							$walker = new ChapelRidge_Walker_Nav_Menu();
+							wp_nav_menu([
+								'menu' => 'Header Menu',
+								'items_wrap' => '<ul id="%1$s" class="nav ml-0 %2$s">%3$s</ul>',
+								'walker' => $walker
+							]);
+						 ?>
+					</div>
 				</div>
 			</nav>
 
