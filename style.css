@@ -958,7 +958,7 @@ ul.list-unstyled {
 	font-size: .8em;
 }
 .site-header #navbarSupportedContent .dropdown-menu {
-	min-width: 300px;
+	min-width: 240px;
 	background-color: #525561;
 	left: auto;
 }
@@ -981,16 +981,24 @@ ul.list-unstyled {
 .navbar-dark .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-@media (max-width:575px){
-	.site-header .navbar-expand-sm > div {
-		width: 100%; text-align: center;
-	}
+@media (max-width:605px){
 	.site-header .dropdown-menu {
-		text-align: center;
 		border: none;
+		width: 80%;
+		margin: 15px 10%;
+		min-width: 120px;
 	}
-	.site-header #navbarSupportedContent ul {
-		margin-left: 0;
+	.site-header ul.nav > li {
+		display: block;
+		width: 100%
+	}
+	.site-header ul.sub-menu.dropdown-menu {
+		position: relative;
+		top: auto;
+		left: 0;
+	}
+	.site-header ul.sub-menu.dropdown-menu > li {
+		padding-left: 0.2em;
 	}
 }
 
